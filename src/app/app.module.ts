@@ -11,6 +11,8 @@ import { ArtistaComponent } from './components/artista/artista.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 
 
+import { HttpClientModule } from '@angular/common/http';
+
 //Importar rutas
 import { ROUTES } from './app.routes';
 
@@ -25,6 +27,7 @@ import { ROUTES } from './app.routes';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot( ROUTES, { useHash: true } )
   ],
   providers: [],
